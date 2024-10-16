@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: #383c40; /* Cor azul escura da Unicesumar */
+    color: white;
+    text-align: center;
+}
+.logo {
+    height: 10vh;
+    position: absolute;
+    left: 0vh;
+    
+}
+.profile {
+    object-fit: contain;
+    height: 5vh;
+    position: absolute;
+    right: 0vh;
+    border-radius: 50%;
+    margin-right: 2vh;
+}
+nav {
+    height: 10vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* Azul escuro para os links */
+    font-weight: bold;
+}
+section {
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    border-bottom: 2px solid #00AEEF; /* Cor azul clara da Unicesumar */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 100%;
+    background-color: #383c40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
