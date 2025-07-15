@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,9 @@
     <title>Meu Portfólio - Fernando</title>
     <link rel="icon" href="./img/logo.jpeg">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <header>
         <h1>Portifólio - Fernando Schezaro</h1>
         <img src="./img/foto.jpg" alt="Minha Foto" class="profile-photo">
@@ -26,48 +24,111 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
         <div class="content">
-            <p>Olá! Meu nome é Fernando Luis, tenho 20 anos e sou apaixonado por tecnologia. Sempre fui fascinado por
-                como as inovações tecnológicas transformam a maneira como vivemos e trabalhamos, e é por isso que
-                escolhi seguir essa área.</p>
+            <p>Olá! Sou Fernando Schezaro, analista de sistemas e entusiasta de tecnologia. Estou sempre em busca de novas formas de otimizar processos e resolver problemas através da inovação.</p>
         </div>
+    </section>
 
-        <h2>Minha Faculdade</h2>
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
         <div class="content">
-            <p>Estou cursando engenharia de software na Unicesumar.</p>
-            <h2>Meu Emprego Atual - Slaviero Hotéis</h2>
-            <div class="content">
-                <p>Atualmente, trabalho como técnico de informática na rede de hotelaria Slaviero Hotéis, onde sou
-                    responsável por suporte técnico e implantação de sistemas. Essa experiência tem me proporcionado
-                    oportunidades de crescimento e desenvolvimento profissional, tanto na área de análise de sistemas
-                    quanto na implantação de sistemas.</p>
-            </div>
+            <p>Engenharia de Software - Unicesumar (4º de 8 períodos).</p>
+        </div>
+    </section>
 
-            <h2>Tecnologias que Estou Estudando</h2>
-            <div class="content">
-                <p>Atualmente, estou focado no estudo das seguintes tecnologias:</p>
-                <ul>
-                    <li>Laravel - PHP</li>
-                    <li>VueJs - Javascript</li>
-                    <li>Bootstrap - CSS</li>
-                    <li>Git e Github</li>
-                </ul>
-            </div>
-            <h2>Meus Contatos</h2>
-            <div>
-                <ul>
-                    <li>Email: fernando.luis.ctt@gmail.com</li>
-                    <li>Telefone: +55 (41) 9 9908-3041</li>
-                    <li>Github: <a href="https://github.com/Fschezaro" target="_blank">Github.com/Fschezaro</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/fernando-schezaro-94251a23b"
-                            target="_blank">Linkedin/fernando-schezaro</a></li>
-                </ul>
-            </div>
+    <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <div class="content">
+            <p><strong>Slaviero Hotéis – Analista de Sistemas</strong> (desde 24/03/2025 – <span id="tempo-emprego"></span>) – Curitiba</p>
+            <ul>
+                <li>Análise de sistemas, documentação e refatoração de processos.</li>
+                <li>Treinamento e implantação de sistemas em mais de 8 estados do Brasil.</li>
+                <li>Suporte técnico a usuários internos e manutenção de hardware e software.</li>
+                <li>Implementação de melhorias nos processos de atendimento e manutenção preventiva.</li>
+            </ul>
+            <p><strong>Slaviero Hotéis – Técnico de TI</strong> (Fev/2023 – Mar/2025 – 2 anos e 1 mês) – Curitiba</p>
+        </div>
+    </section>
+
+    <section id="competencias">
+        <h2>Competências Técnicas</h2>
+        <div class="content">
+            <ul>
+                <li>Sistemas operacionais: Windows Server e Linux.</li>
+                <li>Redes: configuração de roteadores, switches, firewall e VPN.</li>
+                <li>Hardware: montagem, diagnóstico e manutenção de desktops e notebooks.</li>
+                <li>Banco de dados: noções de SQL, backup e restauração.</li>
+                <li>Infraestrutura: virtualização, monitoramento e políticas de segurança.</li>
+                <li>Atendimento: suporte a usuários, documentação de incidentes e controle de sistemas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="qualificacoes">
+        <h2>Qualificações Complementares</h2>
+        <div class="content">
+            <ul>
+                <li>Facilidade para trabalhar em equipe e organizar demandas.</li>
+                <li>Boa comunicação e foco no atendimento ao usuário.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <h2>Tecnologias que Estou Estudando</h2>
+        <div class="content">
+            <ul>
+                <li>Laravel - PHP</li>
+                <li>VueJs - Javascript</li>
+                <li>Bootstrap - CSS</li>
+                <li>Git e Github</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Meus Contatos</h2>
+        <div>
+            <ul>
+                <li>Email: fernando.luis.ctt@gmail.com</li>
+                <li>Telefone: +55 (41) 9 9908-3041</li>
+                <li>Github: <a href="https://github.com/Fschezaro" target="_blank">Github.com/Fschezaro</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/fernando-schezaro-94251a23b" target="_blank">Linkedin/fernando-schezaro</a></li>
+            </ul>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Fernando Luis Ortiz Schezaro - Unicesumar. Todos os direitos reservados.</p>
     </footer>
 
-</body>
+    <script>
+        function calcularTempoEmprego() {
+            const inicio = new Date(2025, 2, 24); // meses começam em 0
+            const hoje = new Date();
+            let anos = hoje.getFullYear() - inicio.getFullYear();
+            let meses = hoje.getMonth() - inicio.getMonth();
+            let dias = hoje.getDate() - inicio.getDate();
 
+            if (dias < 0) {
+                meses -= 1;
+                const ultimoMes = new Date(hoje.getFullYear(), hoje.getMonth(), 0).getDate();
+                dias += ultimoMes;
+            }
+            if (meses < 0) {
+                anos -= 1;
+                meses += 12;
+            }
+            const partes = [];
+            if (anos > 0) partes.push(anos + (anos === 1 ? ' ano' : ' anos'));
+            if (meses > 0) partes.push(meses + (meses === 1 ? ' mês' : ' meses'));
+            if (anos === 0 && dias > 0) partes.push(dias + (dias === 1 ? ' dia' : ' dias'));
+            return partes.join(' e ');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const span = document.getElementById('tempo-emprego');
+            if (span) span.textContent = calcularTempoEmprego();
+        });
+    </script>
+</body>
 </html>

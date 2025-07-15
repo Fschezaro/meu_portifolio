@@ -1,23 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
+    font-weight: 400;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f0f4f8, #e8f0fe);
     color: #333;
 }
+
 header {
-    background-color: #003366; /* Cor azul escura da Unicesumar */
-    color: white;
-    padding: 1em 0;
+    background-color: #003366;
+    color: #fff;
+    padding: 2em 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 header h1 {
     margin: 0;
-    font-size: 2.0em;
+    font-size: 2.5em;
+    font-weight: 700;
 }
+
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -26,33 +31,54 @@ header h1 {
     margin: 20px auto;
     display: block;
     border: 4px solid #00AEEF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 nav {
-    margin: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #003366;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 nav a {
-    margin: 0 15px;
+    color: #fff;
     text-decoration: none;
-    color: #003366; /* Azul escuro para os links */
-    font-weight: bold;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
+
+nav a:hover {
+    background-color: #005999;
+    color: #fff;
+}
+
 section {
     margin: 40px auto;
     max-width: 900px;
-    background-color: white;
-    padding: 20px;
+    background-color: #fff;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
 section h2 {
-    border-bottom: 2px solid #00AEEF; /* Cor azul clara da Unicesumar */
+    border-bottom: 2px solid #00AEEF;
     padding-bottom: 10px;
     margin-bottom: 20px;
     color: #003366;
 }
+
 section h3 {
     color: #003366;
+    margin-top: 30px;
 }
 
 section h5 {
@@ -61,41 +87,48 @@ section h5 {
 
 .content {
     margin-bottom: 40px;
+    line-height: 1.6;
 }
+
 footer {
     background-color: #003366;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-    bottom: 0;
-    width: 100%;
+    padding: 15px 0;
+    margin-top: 40px;
 }
+
 ul li {
     margin: 5px 0;
 }
 
 #certificado {
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: center;
 }
 
 #certificado .content {
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    align-items: center; /* Centraliza os elementos horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50; 
-    color: white; 
-    text-align: center;
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 5px; 
-    margin-bottom: 5%;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.download:hover {
+    background-color: #45a049;
 }
 
 .images {
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
+    border-radius: 8px;
 }
-
