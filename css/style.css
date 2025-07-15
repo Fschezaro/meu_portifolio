@@ -20,6 +20,27 @@ header {
     gap: 2em;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(153, 0, 255, 0.6), rgba(153, 0, 255, 0) 70%);
+    filter: blur(60px);
+    animation: glowMove 8s linear infinite;
+    z-index: -1;
+}
+
+@keyframes glowMove {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(25%, 25%); }
+    100% { transform: translate(0, 0); }
 }
 
 header h1 {
